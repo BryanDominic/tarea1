@@ -75,6 +75,9 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;/*se divide en dos 1fr para cada lado*/   
 }
+h2 {
+    text-align: center;
+}
 .formulario{
     display: flex;
     flex-flow: column nowrap;

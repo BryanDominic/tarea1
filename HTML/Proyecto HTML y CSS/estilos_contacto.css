@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+:root{
+    --color1: #ffffff;
+    --color2: #000000;
+    --color3: #F0F3F5;
+    --color4: #df405a;
+    --color5: #bd1550; 
+    --color6: #2a3d54;
+    --color7: #2196e9;
+    --color8: #d7e8f5;
+    --color9: rgba(0, 0, 0, 0.329);
+
+    --fuente1: 'Roboto', sans-serif;
+    --fuente2: 'Quicksand', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.menu{
+    width: 100%;
+    background-color: #937d14;
+    color: var(--color1);
+    display: grid;
+    grid-template-columns: 1fr 600px;/*a los lados, miestras mas alto, mas  se separan*/
+    grid-template-rows: 60px;/*row ancho de arriba abajo*/
+}
+.menu::after {
+    content: "";/*Para poner un */
+    display: block;
+    position: absolute;
+    top: 60px;
+    border-top: 20px solid #937d14;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom:20px solid transparent;
+    right: 48.2%;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;/*se alinea al inicio*/
+    align-items: center;/*lo pone medio a medio de arriba a abajo*/
+    padding-left: 2rem;
+}
+.logo a{
+    font-size: 1.5rem;
+    font-family: var(--fuente2);
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: aliceblue;
+}    
+.items{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-right: 2rem;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.items li{
+    flex: 2 0 0;
+    text-align: center;
+}
+.items li a{
+    text-decoration: none;
+    color: var(--color1);
+    font-family: var(--fuente1);
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+main {
+    background-image: url("image/2.jpg");
+    background-position: 50% 50%;
+    height: 100vh;
+    background-size: 50%;
+}
+
+.fondo-gris {
+    /*Esta unidad calcula el tamano en base a la pantalla del dispositivo, en este */
+    /*caso usa toda la altura(height)*/
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(124,124,124,.2);
+}
+.titulo {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px; /*espacio entre el titulo y el contenido abajo*/
+}
+
+.contenedor-formulario {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    background: #d2c6b2;
+    padding: 10px; /*es el espacio entre el contenedor(las letras)*/
+    top: 15%; /*espacio de arriba*/
+
+}
+
+.contenido {
+    width: 100%;
+}
+
+.contenido > article {
+    display: inline-block;
+}
+
+.info{
+    width: 34%;
+    padding: 10px;
+    position: relative;
+    top: -30px;
+}
+
+.info > *{
+/*padding es para mover, el primero mueve de abajo a arriba y el segundo de izquierda a derecha*/
+    padding: 50px 0px;
+}
+
+.info ul li {
+    padding: 5px 0px;/*padding espacio abajo*/
+    color: var(--color1);
+}
+
+.redes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#f{
+    margin-top: 0px;
+    color:#3b5998;
+}
+
+#t{
+    margin-top: 0px;
+    color:#00acee;
+}
+
+#i{
+    margin-top: 0px;
+    color:#3f729b;
+}
+
+.formulario {
+    width: 65%;
+}
+
+form > * {
+    display: block;
+}
+
+.caja-texto {
+    width: 90%;
+    padding: 5px; /*ancho*/
+    line-height: 1.3;/*para el text area*/
+    margin-bottom: 15px; /*espacio*/
+    border: 1px solid #ced4da;
+}
+
+/*Clases de utilidades*/
+
+.color-principal-fuentes {
+    color: #937d14;
+    text-align: center;
+}
+
+.boton{
+    border-color: grey;
+    background-color: #16CF8B;
+    color: white;
+    padding: 2px;
+}
+footer {
+    color: #937d14;
+    font-family: var(--fuente1);
+    text-align: center;
+    background-color: #d2c6b2;
+}
